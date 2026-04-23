@@ -1,0 +1,16 @@
+{
+  "name": "playrightproject",
+  "version": "1.0.0",
+  "main": "teste.js",
+  "scripts": {
+    "start": "node teste.js",
+    "test": "node teste.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
