@@ -1,19 +1,50 @@
-# Projeto de Testes com Playwright
+# 🧪 QA Automation Project with Playwright
 
-Este projeto contém testes automatizados utilizando Playwright.
+Este projeto tem como objetivo demonstrar a implementação de testes automatizados utilizando Playwright, com foco na validação de funcionalidades críticas de aplicações web.
 
-## 📌 Cenários cobertos
+---
 
-- Validação de login
-- Testes de formulários
-- Tratamento de erros
+## 🎯 Objetivo
 
-## 🧪 Ferramentas
+Validar o comportamento da aplicação em cenários reais de uso, garantindo qualidade, confiabilidade e cobertura de testes em fluxos essenciais.
 
-- Playwright
-- JavaScript
+---
 
-## 🚀 Como executar
+## 📌 Cenários testados
 
-npm install  
-npx playwright test
+- ✅ Login com credenciais válidas  
+- ❌ Login com credenciais inválidas  
+- ⚠️ Validação de campos obrigatórios  
+- 🚫 Tratamento de mensagens de erro  
+
+---
+
+## 🧠 Abordagem de QA
+
+Os testes foram desenvolvidos com base em boas práticas de Quality Assurance, incluindo:
+
+- Testes funcionais  
+- Validação de cenários positivos e negativos  
+- Cobertura de fluxos críticos  
+- Estruturação clara e reutilizável dos testes  
+
+---
+
+## ⚙️ Tecnologias utilizadas
+
+- Playwright  
+- JavaScript  
+- Node.js  
+
+---
+
+## 📂 Estrutura do projeto
+
+```text
+tests/
+├── login.spec.js
+├── form-validation.spec.js
+
+playwright.config.js
+package.json
+README.md
