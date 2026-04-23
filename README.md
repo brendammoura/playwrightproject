@@ -1,19 +1,19 @@
-# Playwright Project
+# Projeto de Testes com Playwright
 
-This project contains automated tests using Playwright.
+Este projeto contém testes automatizados utilizando Playwright.
 
-## 📌 Covered scenarios
+## 📌 Cenários cobertos
 
-- Login validation
-- Form testing
-- Error handling
+- Validação de login
+- Testes de formulários
+- Tratamento de erros
 
-## 🧪 Tools
+## 🧪 Ferramentas
 
 - Playwright
 - JavaScript
 
-## 🚀 How to run
+## 🚀 Como executar
 
 npm install  
 npx playwright test
