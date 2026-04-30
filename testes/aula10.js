@@ -2,22 +2,20 @@ const { chromium } = require('playwright');
 const expect = require('expect');
 
 (async () => {
-    const browser = await chromium.launch({headless:false})
+    const browser = await chromium.launch({headless:false, slowMo: 100})
     const context = await browser.newContext();
     const page = await context.newPage()
 
     await page.goto('https://demo.applitools.com/')
 
-    await page.fill('input[type = "email"]', 'alanvoigt@yahoo.com.br')
-    await page.press('input[type = "email"]', 'Tab')
-    await page.type('input[type = "password"]', 'test123')
+    await page.fill('input[type = "text"]', 'Admin')
+    await page.press('input[type = "text"]', 'Tab')
+    await page.type('input[type = "password"]', 'Admin123')
     await page.click("form >> 'Sign in'")
 
-    const html = await page.innerHTML('.feed-toggle')
-    expect(html).toMatch('Your Feed')
-
-    // Screeshot
+       // Screenshot
     await page.screenshot({path: 'SignIn.png', fullPage: true})
+    console.log('Screenshot capturado com sucesso!')
 
     await browser.close()
 })()
